@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StopWatch | Deva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-[#2c3e50]">
+    <div
+      class="main max-w-lg mx-auto my-5 p-3 text-white text-center flex justify-center items-center"
+    >
+      <div
+        class="bg-[#bdc3c7] p-2 my-2 flex flex-col justify-center items-center rounded-lg shadow-lg"
+      >
+        <div
+          class="clock bg-[#2980b9] h-64 w-64 rounded-full flex justify-center items-center shadow-lg"
+        >
+          <!-- Hours,Min,Sec,Ms -->
+          <div
+            class="clock-font timer flex justify-center items-center text-3xl p-2"
+          >
+            <div class="hrs w-6">0</div>
+            <div class="hrs w-6">0</div>
+            <div class="colon">:</div>
+            <div class="min w-6">0</div>
+            <div class="min w-6">0</div>
+            <div class="colon">:</div>
+            <div class="sec w-6">0</div>
+            <div class="sec w-6">0</div>
+            <div class="colon">:</div>
+            <div class="ms w-6">0</div>
+            <div class="ms w-6">0</div>
+          </div>
+        </div>
+
+        <div class="buttons my-4 flex justify-center items-center">
+          <button
+            class="start btn bg-[#27ae60] shadow-lg flex justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m4.25 3l1.166-.624l8 5.333v1.248l-8 5.334l-1.166-.624V3zm1.5 1.401v7.864l5.898-3.932L5.75 4.401z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span class="mx-1">start</span>
+          </button>
+          <button
+            class="stop btn bg-red-500 shadow-lg flex justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M8 13V5.5a1.5 1.5 0 0 1 3 0V12m0-6.5v-2a1.5 1.5 0 1 1 3 0V12m0-6.5a1.5 1.5 0 0 1 3 0V12"
+                />
+                <path
+                  d="M17 7.5a1.5 1.5 0 0 1 3 0V16a6 6 0 0 1-6 6h-2h.208a6 6 0 0 1-5.012-2.7A69.74 69.74 0 0 1 7 19c-.312-.479-1.407-2.388-3.286-5.728a1.5 1.5 0 0 1 .536-2.022a1.867 1.867 0 0 1 2.28.28L8 13"
+                />
+              </g>
+            </svg>
+
+            <span class="mx-1">Stop</span>
+          </button>
+          <button
+            class="reset btn bg-[#2980b9] shadow-lg flex justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 21 21"
+            >
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M14.5 3.5c2.414 1.377 4 4.022 4 7a8 8 0 1 1-8-8" />
+                <path d="M14.5 7.5v-4h4" />
+              </g>
+            </svg>
+
+            <span class="mx-1">Reset</span>
+          </button>
+        </div>
+        <h2 class="my-2 text-[#16a085] font-semibold">
+          Stopwatch Created By <span class="text-[#c0392b] txt">Devauma</span>
+        </h2>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

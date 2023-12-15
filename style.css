@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Style+Script&display=swap");
+
+@font-face {
+  font-family: digital-7;
+  src: url(./digital-7.ttf);
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Style Script', cursive; */
+
+body {
+  font-family: "Poppins", sans-serif;
+  user-select: none;
+}
+.txt {
+  font-family: "Style Script", cursive;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.clock-font {
+  font-family: "digital-7";
+}
+.btn {
+  padding: 8px;
+  margin-right: 6px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+.colon {
+  opacity: 0.3;
+}
+.animation-active .colon {
+  animation: blink 0.7s ease infinite;
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.start-active,
+.stop-active {
+  pointer-events: none;
+  opacity: 0.5;
+}
